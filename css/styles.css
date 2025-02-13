@@ -1,14 +1,58 @@
+:root{
+    --blanco: #ffffff;
+    --nigger: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575; 
+}
 html{
     font-size: 62.5%;
+    font-family: "Montserrat", serif;
 }
 body{
-    font-size: 16px;
+    font-size: 16px; /*16px predeterminado*/
 
 }
 .titulo{
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 3.8rem; 
 }
 .titulo span{
-    font-size: 2rem;
+    font-size: 2rem; /*Doble de tamaño (2rem)*/
 }
+.navegacion-principal{
+    background-color: var(--secundario);
+}
+.contenedor{
+    max-width: 120rem;  /*importante para tamaño de pagina*/
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal a{ /*anclas (texto)*/
+    background-color: var(--secundario);
+    color: var(--blanco);
+    text-decoration: none; /*Quitar subrayados de los textos*/
+    padding: 1rem;
+}
+.navegacion-principal{
+    /*padding: 1rem; /*Relleno del margen (ancho vertical)*/
+    display: flex; /*Descenlasar textos*/
+    justify-content: space-around; /*Poner espacios entre*/
+    flex-direction: column; /*direccion de columnas*/
+    align-items: center; /*Centrar Textos*/
+    font-size: 2rem; 
+    font-weight: bold;
+}
+.navegacion-principal a:hover{ /* : Seudoclase (auotcreada) para seleccionar al poner el mouse*/
+    background-color: var(--primario);
+    color: var(--nigger);
+}
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
