@@ -117,47 +117,46 @@
                     exercitationem deleniti.</p>
             </section>
     </div>
-    </main>
 
     <section>
         <h2>Contacto</h2>
-        <form action="">
+        <form class="formulario">
             <fieldset>
                 <legend>
                     Llena tus datos para establecer contacto
                 </legend>
-                <div>
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Tu Nombre">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Teléfono</label>
+                        <input type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Correo</label>
+                        <input type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                </div> <!-- Contenedor de campos -->
+                
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
                 </div>
-
-                <div>
-                    <label for="">Teléfono</label>
-                    <input type="tel" placeholder="Tu Teléfono">
-                </div>
-
-                <div>
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Tu Email">
-                </div>
-
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-
-
 
             </fieldset>
         </form>
-
     </section>
 
-    <footer>
+</main>
+    <footer class="footer">
         <p>Todos los derechos reservados 2025 © José Manuel Aqué González</p>
     </footer>
 
